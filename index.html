@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>twitr-replica</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header-cont">
+          <a href="#" class="logo">
+            <img class="menu-logo" src="twitter-logo2.png" alt="twitter logo" />
+          </a>
+        </div>
+        <div class="header-list">
+          <a href="#" class="header-list-el-link">
+            <div class="list-el">
+              <ion-icon class="menu-logo" name="home-outline"></ion-icon>
+              <span>Home</span>
+            </div>
+          </a>
+          <a href="#" class="header-list-el-link">
+            <div class="list-el">
+              <ion-icon class="menu-logo" name="search-outline"></ion-icon>
+              <span>Explore</span>
+            </div>
+          </a>
+          <a href="#" class="header-list-el-link">
+            <div class="list-el">
+              <ion-icon
+                class="menu-logo"
+                name="notifications-outline"
+              ></ion-icon>
+              <span>Notifications</span>
+            </div>
+          </a>
+          <a href="#" class="header-list-el-link">
+            <div class="list-el">
+              <ion-icon class="menu-logo" name="mail-outline"></ion-icon>
+              <span>Messages</span>
+            </div>
+          </a>
+          <a href="#" class="header-list-el-link">
+            <div class="list-el">
+              <ion-icon class="menu-logo" name="reader-outline"></ion-icon>
+              <span>Lists</span>
+            </div>
+          </a>
+          <a href="#" class="header-list-el-link">
+            <div class="list-el">
+              <ion-icon class="menu-logo" name="bookmark-outline"></ion-icon>
+              <span>Bookmark</span>
+            </div>
+          </a>
+          <a href="#" class="header-list-el-link">
+            <div class="list-el">
+              <ion-icon class="menu-logo" name="people-outline"></ion-icon>
+              <span>Comunities</span>
+            </div>
+          </a>
+          <a href="#" class="header-list-el-link">
+            <div class="list-el">
+              <ion-icon class="menu-logo" name="logo-twitter"></ion-icon>
+              <span>Verified</span>
+            </div>
+          </a>
+          <a href="#" class="header-list-el-link">
+            <div class="list-el">
+              <ion-icon class="menu-logo" name="person-outline"></ion-icon>
+              <span>Profile</span>
+            </div>
+          </a>
+          <a href="#" class="header-list-el-link">
+            <div class="list-el">
+              <ion-icon
+                class="menu-logo"
+                name="ellipsis-horizontal-circle-outline"
+              ></ion-icon>
+              <span>More</span>
+            </div>
+          </a>
+        </div>
+        <div class="post-btn-cont">
+          <a href="#" class="post-btn"> Post </a>
+        </div>
+        <div class="header-acc">
+          <a href="#" class="header-acc-link">
+            <img src="/personal_logo.jpg" alt="acc img" class="acc-logo" />
+            <p class="acc-name">belo</p>
+            <p class="acc-tag">@belo</p>
+            <ion-icon
+              name="ellipsis-horizontal-outline"
+              class="acc-dots"
+            ></ion-icon>
+          </a>
+        </div>
+      </div>
+      <div class="for-you">
+        <div class="for-you-head-nav">
+          <a href="#" class="head-nav-home">Home</a>
+          <a href="#" class="head-nav-for-you">For you</a>
+          <a href="#" class="head-nav-following">Following</a>
+        </div>
+
+        <div class="for-you-form">
+          <div class="form-icon">
+            <a href="#">
+              <img src="/personal_logo.jpg" alt="acc img" class="acc-logo" />
+            </a>
+          </div>
+          <div class="form-input-field">
+            <input
+              type="text"
+              class="input-field-area"
+              placeholder="What is happening?!"
+            />
+          </div>
+          <div class="form-controls">
+            <div class="form-controls-icons">
+              <a href="#" class="control-icon-link">
+                <div class="control-icon-div">
+                  <ion-icon
+                    name="image-outline"
+                    class="control-icon"
+                  ></ion-icon>
+                </div>
+              </a>
+              <a href="#" class="control-icon-link">
+                <div class="control-icon-div">
+                  <ion-icon
+                    name="albums-outline"
+                    class="control-icon"
+                  ></ion-icon>
+                </div>
+              </a>
+              <a href="#" class="control-icon-link">
+                <div class="control-icon-div">
+                  <ion-icon name="list-outline" class="control-icon"></ion-icon>
+                </div>
+              </a>
+              <a href="#" class="control-icon-link">
+                <div class="control-icon-div">
+                  <ion-icon
+                    name="happy-outline"
+                    class="control-icon"
+                  ></ion-icon>
+                </div>
+              </a>
+              <a href="#" class="control-icon-link">
+                <div class="control-icon-div">
+                  <ion-icon
+                    name="calendar-clear-outline"
+                    class="control-icon"
+                  ></ion-icon>
+                </div>
+              </a>
+              <a href="#" class="control-icon-link">
+                <div class="control-icon-div">
+                  <ion-icon
+                    name="location-outline"
+                    class="control-icon"
+                  ></ion-icon>
+                </div>
+              </a>
+            </div>
+            <div class="form-control-post">
+              <a href="#" class="control-btn flex-center">Post</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="for-you-posts">
+          <div class="for-you-post">
+            <div class="post-icon">
+              <a href="#" class="post-icon-link"> </a>
+            </div>
+            <div class="post-context">
+              <div class="post-context-head">
+                <p class="acc-name">WIZZ ( beware of scammers )</p>
+                <p>&nbsp;</p>
+                <p class="acc-tag">@CryptoWizz</p>
+                <p class="acc-dot">&nbsp;&middot;&nbsp;</p>
+                <p class="acc-time acc-tag">20h</p>
+                <a href="#" class="dots flex-center">
+                  <ion-icon
+                    name="ellipsis-horizontal-outline"
+                    class="acc-dots"
+                  ></ion-icon>
+                </a>
+              </div>
+              <div class="post-context-user-story">
+                <p>
+                  A Tip to the new Traders
+                  <br />
+                  <br />
+                  If you've made it this far, then keep learning, become an
+                  Expert at one Subject, try new tools and be ready for the next
+                  cycle of Volatility.
+                  <br /><br />
+                  If Crypto feels dead to you, trust me, 2018 felt even worse.
+                  <br /><br />
+                  Don't leave, learn, skill up, and be Ready.
+                </p>
+              </div>
+              <div class="post-context-icons">
+                <a href="#" class="post-context-chat">
+                  <div class="post-context-chat-aura flex-center-gap">
+                    <div class="aura flex-center">
+                      <ion-icon
+                        class="post-context-icon"
+                        name="chatbubble-outline"
+                      ></ion-icon>
+                    </div>
+                    <p class="post-context-icon-number">2</p>
+                  </div>
+                </a>
+
+                <a href="#" class="post-context-repeat">
+                  <div class="post-context-repeat-aura flex-center-gap">
+                    <div class="aura flex-center">
+                      <ion-icon
+                        class="post-context-icon"
+                        name="repeat-outline"
+                      ></ion-icon>
+                    </div>
+                    <p class="post-context-icon-number">119</p>
+                  </div>
+                </a>
+
+                <a href="#" class="post-context-heart">
+                  <div class="post-context-heart-aura flex-center-gap">
+                    <div class="aura flex-center">
+                      <ion-icon
+                        class="post-context-icon"
+                        name="heart-outline"
+                      ></ion-icon>
+                    </div>
+                    <p class="post-context-icon-number">26</p>
+                  </div>
+                </a>
+
+                <a href="#" class="post-context-stats">
+                  <div class="post-context-stats-aura flex-center-gap">
+                    <div class="aura flex-center">
+                      <ion-icon
+                        class="post-context-icon"
+                        name="stats-chart"
+                      ></ion-icon>
+                    </div>
+                    <p class="post-context-icon-number">1,707</p>
+                  </div>
+                </a>
+
+                <a href="#" class="post-context-share">
+                  <div class="post-context-share-aura flex-center-gap">
+                    <div class="aura flex-center">
+                      <ion-icon
+                        class="post-context-icon"
+                        name="share-outline"
+                      ></ion-icon>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="for-you-post">
+            <div class="post-icon">
+              <a href="#" class="post-icon-link"> </a>
+            </div>
+            <div class="post-context">
+              <div class="post-context-head">
+                <p class="acc-name">WIZZ ( beware of scammers )</p>
+                <p>&nbsp;</p>
+                <p class="acc-tag">@CryptoWizz</p>
+                <p class="acc-dot">&nbsp;&middot;&nbsp;</p>
+                <p class="acc-time acc-tag">20h</p>
+                <a href="#" class="dots flex-center">
+                  <ion-icon
+                    name="ellipsis-horizontal-outline"
+                    class="acc-dots"
+                  ></ion-icon>
+                </a>
+              </div>
+              <div class="post-context-user-story">
+                <p>
+                  A Tip to the new Traders
+                  <br />
+                  <br />
+                  If you've made it this far, then keep learning, become an
+                  Expert at one Subject, try new tools and be ready for the next
+                  cycle of Volatility.
+                  <br /><br />
+                  If Crypto feels dead to you, trust me, 2018 felt even worse.
+                  <br /><br />
+                  Don't leave, learn, skill up, and be Ready.
+                </p>
+              </div>
+              <div class="post-context-icons">
+                <a href="#" class="post-context-chat">
+                  <div class="post-context-chat-aura flex-center-gap">
+                    <div class="aura flex-center">
+                      <ion-icon
+                        class="post-context-icon"
+                        name="chatbubble-outline"
+                      ></ion-icon>
+                    </div>
+                    <p class="post-context-icon-number">2</p>
+                  </div>
+                </a>
+
+                <a href="#" class="post-context-repeat">
+                  <div class="post-context-repeat-aura flex-center-gap">
+                    <div class="aura flex-center">
+                      <ion-icon
+                        class="post-context-icon"
+                        name="repeat-outline"
+                      ></ion-icon>
+                    </div>
+                    <p class="post-context-icon-number">119</p>
+                  </div>
+                </a>
+
+                <a href="#" class="post-context-heart">
+                  <div class="post-context-heart-aura flex-center-gap">
+                    <div class="aura flex-center">
+                      <ion-icon
+                        class="post-context-icon"
+                        name="heart-outline"
+                      ></ion-icon>
+                    </div>
+                    <p class="post-context-icon-number">26</p>
+                  </div>
+                </a>
+
+                <a href="#" class="post-context-stats">
+                  <div class="post-context-stats-aura flex-center-gap">
+                    <div class="aura flex-center">
+                      <ion-icon
+                        class="post-context-icon"
+                        name="stats-chart"
+                      ></ion-icon>
+                    </div>
+                    <p class="post-context-icon-number">1,707</p>
+                  </div>
+                </a>
+
+                <a href="#" class="post-context-share">
+                  <div class="post-context-share-aura flex-center-gap">
+                    <div class="aura flex-center">
+                      <ion-icon
+                        class="post-context-icon"
+                        name="share-outline"
+                      ></ion-icon>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="controls"></div>
+    </div>
+  </body>
+</html>
