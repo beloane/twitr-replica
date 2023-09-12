@@ -39,7 +39,7 @@ body {
   justify-content: flex-start;
   overflow-y: scroll;
   overflow-x: hidden;
-  gap: 4rem;
+  gap: 3rem;
 }
 
 .scrollable-div::-webkit-scrollbar {
@@ -617,7 +617,21 @@ body {
 
 .controls {
   width: 35rem;
-  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  /* padding-right: 1rem; */
+}
+
+.control {
+  width: 34.8rem;
+  padding: 1.2rem 1.6rem;
+  border-radius: 1.6rem;
+  color: rgb(231, 233, 234);
+  background-color: rgb(32, 35, 39);
+
+  display: flex;
+  flex-direction: column;
 }
 
 .control-search {
@@ -650,4 +664,75 @@ body {
   border: none;
   color: white;
   outline-style: none;
+}
+
+/* //////SUBSCRIBE/////////// */
+
+.control-subscribe {
+  height: 14.4rem;
+  gap: 1rem;
+}
+.control-head {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-weight: 800;
+}
+.control-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.subscribe-btn-cont {
+  display: inline-block;
+  height: 3.4rem;
+  width: 10.5rem;
+}
+.subscribe-btn:link,
+.subscribe-btn:visited {
+  height: 3.4rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 0 1.6rem;
+  border-radius: 100rem;
+  color: inherit;
+
+  transition: all 0.2s;
+  background-color: rgb(29, 155, 240);
+}
+.subscribe-btn:hover,
+.subscribe-btn:active {
+  background-color: rgb(26, 140, 216);
+}
+
+/* /////////LIVE///////// */
+
+.live-more-head {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+}
+
+.live-more-head-icon img {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.live-more-persons {
+  display: flex;
+  /* justify-content: center; */
+}
+.live-more-person {
+  width: 17rem;
+}
+
+.live-more-tabs {
+  height: 3.8rem;
+  width: 10.8rem;
+  margin-left: auto;
+  border: 2px solid rgba(120, 86, 255);
+  background-color: black;
 }
