@@ -21,18 +21,18 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-
+    <script src="/script.js" defer></script>
     <title>twitr-replica</title>
   </head>
   <body>
-    <div class="container">
+    <div class="layout">
       <div class="header-container">
         <div class="header">
           <div class="header-cont">
             <a href="#" class="logo">
               <img
                 class="menu-logo"
-                src="twitter-logo2.png"
+                src="/img/twitter-logo2.png"
                 alt="twitter logo"
               />
             </a>
@@ -110,7 +110,11 @@
           </div>
           <div class="header-acc">
             <a href="#" class="header-acc-link">
-              <img src="/personal_logo.jpg" alt="acc img" class="acc-logo" />
+              <img
+                src="/img/personal_logo.jpg"
+                alt="acc img"
+                class="acc-logo"
+              />
               <p class="acc-name">belo</p>
               <p class="acc-tag">@belo</p>
               <ion-icon
@@ -121,7 +125,7 @@
           </div>
         </div>
       </div>
-      <div class="main scrollable-div">
+      <div class="main">
         <div class="for-you">
           <div class="for-you-head-nav">
             <a href="#" class="head-nav-home">Home</a>
@@ -132,7 +136,11 @@
           <div class="for-you-form">
             <div class="form-icon">
               <a href="#">
-                <img src="/personal_logo.jpg" alt="acc img" class="acc-logo" />
+                <img
+                  src="/img/personal_logo.jpg"
+                  alt="acc img"
+                  class="acc-logo"
+                />
               </a>
             </div>
             <div class="form-input-field">
@@ -333,10 +341,7 @@
                     <br /><br />
                     Kitchen (got to cook)
                     <br /><br />
-                    Clothes washer individual as kids cloths need gentle cycle
-                    <br /><br />
-                    Dinner table with high chairs
-                    <br /><br />
+
                     And all the other fun things to make the…
                     <span class="show-more">Show more</span>
                   </p>
@@ -406,7 +411,7 @@
             <div class="for-you-post">
               <div class="post-icon">
                 <a href="#" class="post-icon-link">
-                  <img src="/twitter-logo2.png" alt="acc logo" />
+                  <img src="/img/twitter-logo2.png" alt="acc logo" />
                 </a>
               </div>
               <div class="post-context">
@@ -421,7 +426,7 @@
                   <p>&nbsp;</p>
                   <img
                     class="verified-musk flex-center"
-                    src="/twitter-logo2.png"
+                    src="/img/twitter-logo2.png"
                     alt="verified"
                   />
                   <p>&nbsp;</p>
@@ -507,7 +512,7 @@
             <div class="for-you-post">
               <div class="post-icon">
                 <a href="#" class="post-icon-link">
-                  <img src="/penguin.jpg" alt="acc logo" />
+                  <img src="/img/penguin.jpg" alt="acc logo" />
                 </a>
               </div>
               <div class="post-context">
@@ -706,7 +711,7 @@
               </div>
             </div>
 
-            <div class="for-you-post">
+            <div class="for-you-post target-int">
               <div class="post-icon">
                 <a href="#" class="post-icon-link">
                   <img
@@ -841,11 +846,7 @@
                     🇮🇳 India - 10:42
                     <br />🇹🇭 Thailand - 09:24 <br />🇨🇳 China - 08:00 <br />🇵🇭
                     Philippines - 07:36 <br />🇪🇬 Egypt - 07:30 <br />🇨🇿 Czechia
-                    - 07:24 <br />🇷🇺 Russia - 07:06 <br />🇸🇪 Sweden - 06:54
-                    <br />🇫🇷 France - 06:54 <br />🇭🇺 Hungary - 06:48 <br />🇸🇦
-                    Saudi Arabia - 06:48 <br />🇭🇰 Hong Kong - 06:42
-
-                    <br />
+                    - 07:24 <br />🇷🇺 Russia - 07:06 <br />
 
                     <span class="show-more">...Show more</span>
                   </p>
@@ -912,283 +913,381 @@
                 </div>
               </div>
             </div>
+
+            <div class="for-you-post">
+              <div class="post-icon">
+                <a href="#" class="post-icon-link rockstar">
+                  <img src="/img/rockstar.png" alt="acc logo" />
+                </a>
+              </div>
+              <div class="post-context">
+                <div class="post-context-head">
+                  <p class="acc-name">Rockstar Games</p>
+                  <p>&nbsp;</p>
+                  <img
+                    class="verified flex-center"
+                    src="/img/verified-rock.png"
+                    alt="verified"
+                  />
+                  <p>&nbsp;</p>
+                  <p class="acc-tag">@RockstarGames</p>
+                  <p class="acc-dot">&nbsp;&middot;&nbsp;</p>
+                  <p class="acc-time acc-tag">1h</p>
+                  <a href="#" class="dots flex-center">
+                    <ion-icon
+                      name="ellipsis-horizontal-outline"
+                      class="acc-dots"
+                    ></ion-icon>
+                  </a>
+                </div>
+                <div class="post-context-user-story">
+                  <p>
+                    The new Bravado Hotring Hellfire (Sports) hits the asphalt
+                    ready for your next high-stakes stock car session.
+                  </p>
+                  <img src="/img/rockstar2.webp" alt="" />
+                </div>
+                <div class="post-context-icons">
+                  <a href="#" class="post-context-chat">
+                    <div class="post-context-chat-aura flex-center-gap">
+                      <div class="aura flex-center">
+                        <ion-icon
+                          class="post-context-icon"
+                          name="chatbubble-outline"
+                        ></ion-icon>
+                      </div>
+                      <p class="post-context-icon-number">114</p>
+                    </div>
+                  </a>
+
+                  <a href="#" class="post-context-repeat">
+                    <div class="post-context-repeat-aura flex-center-gap">
+                      <div class="aura flex-center">
+                        <ion-icon
+                          class="post-context-icon"
+                          name="repeat-outline"
+                        ></ion-icon>
+                      </div>
+                      <p class="post-context-icon-number">124</p>
+                    </div>
+                  </a>
+
+                  <a href="#" class="post-context-heart">
+                    <div class="post-context-heart-aura flex-center-gap">
+                      <div class="aura flex-center">
+                        <ion-icon
+                          class="post-context-icon"
+                          name="heart-outline"
+                        ></ion-icon>
+                      </div>
+                      <p class="post-context-icon-number">902</p>
+                    </div>
+                  </a>
+
+                  <a href="#" class="post-context-stats">
+                    <div class="post-context-stats-aura flex-center-gap">
+                      <div class="aura flex-center">
+                        <ion-icon
+                          class="post-context-icon"
+                          name="stats-chart"
+                        ></ion-icon>
+                      </div>
+                      <p class="post-context-icon-number">181.8K</p>
+                    </div>
+                  </a>
+
+                  <a href="#" class="post-context-share">
+                    <div class="post-context-share-aura flex-center-gap">
+                      <div class="aura flex-center">
+                        <ion-icon
+                          class="post-context-icon"
+                          name="share-outline"
+                        ></ion-icon>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="controls">
-          <div class="control-search flex-center">
-            <div class="control-search-bar flex-center">
-              <div class="control-search-icon-div flex-center">
-                <ion-icon
-                  class="control-search-icon"
-                  name="search-outline"
-                ></ion-icon>
-              </div>
-              <input type="text" class="control-input" placeholder="Search" />
-            </div>
-          </div>
-          <div class="control-subscribe control">
-            <p class="control-head">Subscribe to Premium</p>
-            <p class="control-text">
-              Subscribe to unlock new features and if eligible, receive a share
-              of ads revenue.
-            </p>
-            <div class="subscribe-btn-cont">
-              <a href="#" class="subscribe-btn flex-center">Subscribe</a>
-            </div>
-          </div>
-          <div class="control-live control">
-            <p class="control-head head-margin">Listen live in Spaces</p>
-            <a href="#" class="live-more">
-              <div class="live-more-head">
-                <div class="live-more-head-icon flex-center">
-                  <img src="/img/LOGO-S-SQUARE-1.webp" alt="" />
+        <div class="controls-container">
+          <div class="controls">
+            <div class="control-search flex-center">
+              <div class="control-search-bar flex-center">
+                <div class="control-search-icon-div flex-center">
+                  <ion-icon
+                    class="control-search-icon"
+                    name="search-outline"
+                  ></ion-icon>
                 </div>
-                <p>&nbsp;</p>
-                <p class="live-more-head-user">Secret Network 😁⚡</p>
-                <img
-                  class="verified flex-center"
-                  src="/img/verified.png"
-                  alt="verified"
-                />
-                <p>&nbsp;</p>
-                <p class="live-more-head-text acc-tag">is hosting</p>
+                <input type="text" class="control-input" placeholder="Search" />
               </div>
-              <div class="live-more-persons">
-                <p class="control-text live-more-person">
-                  Interviewing @scrt_lab new CEO, Alex Zaidelson
-                </p>
-                <div class="live-more-tabs">
-                  <div class="live-more-tab flex-center">
-                    <img src="/img/LOGO-S-SQUARE-1.webp" alt="logo" />
-                    <img src="/img/rocket.jpg" alt="rocket" />
-                    <img
-                      src="/img/giant-panda-eating_square.avif"
-                      alt="panda logo"
-                    />
+            </div>
+            <div class="control-subscribe control">
+              <p class="control-head">Subscribe to Premium</p>
+              <p class="control-text">
+                Subscribe to unlock new features and if eligible, receive a
+                share of ads revenue.
+              </p>
+              <div class="subscribe-btn-cont">
+                <a href="#" class="subscribe-btn flex-center">Subscribe</a>
+              </div>
+            </div>
+            <div class="control-live control">
+              <p class="control-head head-margin">Listen live in Spaces</p>
+              <a href="#" class="live-more">
+                <div class="live-more-head">
+                  <div class="live-more-head-icon flex-center">
+                    <img src="/img/LOGO-S-SQUARE-1.webp" alt="" />
                   </div>
-                  <p class="live-more-tab-number">+21</p>
+                  <p>&nbsp;</p>
+                  <p class="live-more-head-user">Secret Network 😁⚡</p>
+                  <img
+                    class="verified flex-center"
+                    src="/img/verified.png"
+                    alt="verified"
+                  />
+                  <p>&nbsp;</p>
+                  <p class="live-more-head-text acc-tag">is hosting</p>
                 </div>
-              </div>
-            </a>
-          </div>
-          <div class="control-follow control">
-            <p class="control-head head-margin">Who to follow</p>
-            <div href="#" class="follow-user">
-              <a href="#" class="post-icon-link">
-                <img src="/img/randomguy.webp" alt="acc logo" />
-              </a>
-              <div class="name-tag">
-                <p class="acc-name">AlexandruC Urzica</p>
-                <p class="acc-tag">@Alexandru223</p>
-              </div>
-              <div class="btn-follow-user flex-center">Follow</div>
-            </div>
-            <div href="#" class="follow-user">
-              <a href="#" class="post-icon-link">
-                <img src="/img/rocket.jpg" alt="acc logo" />
-              </a>
-              <div class="name-tag">
-                <p class="acc-name">Adam Owen</p>
-                <p class="acc-tag">@adamyid</p>
-              </div>
-              <div class="btn-follow-user flex-center">Follow</div>
-            </div>
-            <div href="#" class="follow-user">
-              <a href="#" class="post-icon-link">
-                <img
-                  src="/img/t-rex_jurassic-world_square.jpg"
-                  alt="acc logo"
-                />
-              </a>
-              <div class="name-tag">
-                <p class="acc-name">T-rexy</p>
-                <p class="acc-tag">@T-bone-rex</p>
-              </div>
-              <div class="btn-follow-user flex-center">Follow</div>
-            </div>
-            <div href="#" class="follow-user show-more-box">
-              <p class="show-more-less-blue">Show more</p>
-            </div>
-          </div>
-          <div class="control-trends control">
-            <p class="control-head head-margin">Romania trends</p>
-            <div href="#" class="follow-trend">
-              <div class="trends-text">
-                <p class="trends-text-ranking acc-tag">
-                  1&nbsp;·&nbsp;Technology&nbsp;·&nbsp;Trending
-                </p>
-                <p class="trends-text-name">#AppleEvent 🍎</p>
-                <p class="trends-text-posts acc-tag">1.13M posts</p>
-              </div>
-              <a href="#" class="trend-dots flex-center">
-                <ion-icon
-                  name="ellipsis-horizontal-outline"
-                  class="acc-dots"
-                ></ion-icon>
+                <div class="live-more-persons">
+                  <p class="control-text live-more-person">
+                    Interviewing @scrt_lab new CEO, Alex Zaidelson
+                  </p>
+                  <div class="live-more-tabs">
+                    <div class="live-more-tab flex-center">
+                      <img src="/img/LOGO-S-SQUARE-1.webp" alt="logo" />
+                      <img src="/img/rocket.jpg" alt="rocket" />
+                      <img
+                        src="/img/giant-panda-eating_square.avif"
+                        alt="panda logo"
+                      />
+                    </div>
+                    <p class="live-more-tab-number">+21</p>
+                  </div>
+                </div>
               </a>
             </div>
-            <div href="#" class="follow-trend">
-              <div class="trends-text">
-                <p class="trends-text-ranking acc-tag">
-                  2&nbsp;·&nbsp;Sports&nbsp;·&nbsp;Trending
-                </p>
-                <p class="trends-text-name">Kosovo</p>
-                <p class="trends-text-posts acc-tag">16.4K posts</p>
+            <div class="control-follow control">
+              <p class="control-head head-margin">Who to follow</p>
+              <div href="#" class="follow-user">
+                <a href="#" class="post-icon-link">
+                  <img src="/img/randomguy.webp" alt="acc logo" />
+                </a>
+                <div class="name-tag">
+                  <p class="acc-name">AlexandruC Urzica</p>
+                  <p class="acc-tag">@Alexandru223</p>
+                </div>
+                <div class="btn-follow-user flex-center">Follow</div>
               </div>
-              <a href="#" class="trend-dots flex-center">
-                <ion-icon
-                  name="ellipsis-horizontal-outline"
-                  class="acc-dots"
-                ></ion-icon>
-              </a>
-            </div>
-            <div href="#" class="follow-trend">
-              <div class="trends-text">
-                <p class="trends-text-ranking acc-tag">
-                  3&nbsp;·&nbsp;Trending
-                </p>
-                <p class="trends-text-name">#VMAs⛳</p>
-                <p class="trends-text-posts acc-tag">1.13M posts</p>
+              <div href="#" class="follow-user">
+                <a href="#" class="post-icon-link">
+                  <img src="/img/rocket.jpg" alt="acc logo" />
+                </a>
+                <div class="name-tag">
+                  <p class="acc-name">Adam Owen</p>
+                  <p class="acc-tag">@adamyid</p>
+                </div>
+                <div class="btn-follow-user flex-center">Follow</div>
               </div>
-              <a href="#" class="trend-dots flex-center">
-                <ion-icon
-                  name="ellipsis-horizontal-outline"
-                  class="acc-dots"
-                ></ion-icon>
-              </a>
-            </div>
-            <div href="#" class="follow-trend">
-              <div class="trends-text">
-                <p class="trends-text-ranking acc-tag">
-                  4&nbsp;·&nbsp;Gaming&nbsp;·&nbsp;Trending
-                </p>
-                <p class="trends-text-name">Unity</p>
-                <p class="trends-text-posts acc-tag">235K posts</p>
+              <div href="#" class="follow-user">
+                <a href="#" class="post-icon-link">
+                  <img
+                    src="/img/t-rex_jurassic-world_square.jpg"
+                    alt="acc logo"
+                  />
+                </a>
+                <div class="name-tag">
+                  <p class="acc-name">T-rexy</p>
+                  <p class="acc-tag">@T-bone-rex</p>
+                </div>
+                <div class="btn-follow-user flex-center">Follow</div>
               </div>
-              <a href="#" class="trend-dots flex-center">
-                <ion-icon
-                  name="ellipsis-horizontal-outline"
-                  class="acc-dots"
-                ></ion-icon>
-              </a>
-            </div>
-            <div href="#" class="follow-trend">
-              <div class="trends-text">
-                <p class="trends-text-ranking acc-tag">
-                  5&nbsp;·&nbsp;Trending
-                </p>
-                <p class="trends-text-name">#MonsterGrowth</p>
-                <p class="trends-text-posts acc-tag">56K posts</p>
+              <div href="#" class="follow-user show-more-box">
+                <p class="show-more-less-blue">Show more</p>
               </div>
-              <a href="#" class="trend-dots flex-center">
-                <ion-icon
-                  name="ellipsis-horizontal-outline"
-                  class="acc-dots"
-                ></ion-icon>
-              </a>
             </div>
-            <div href="#" class="follow-trend">
-              <div class="trends-text">
-                <p class="trends-text-ranking acc-tag">
-                  6&nbsp;·&nbsp;K-pop&nbsp;·&nbsp;Trending
-                </p>
-                <p class="trends-text-name">#HappyBirthdayNamjoon</p>
-                <p class="trends-text-posts acc-tag">38.2K posts</p>
+            <div class="control-trends control">
+              <p class="control-head head-margin">Romania trends</p>
+              <div href="#" class="follow-trend">
+                <div class="trends-text">
+                  <p class="trends-text-ranking acc-tag">
+                    1&nbsp;·&nbsp;Technology&nbsp;·&nbsp;Trending
+                  </p>
+                  <p class="trends-text-name">#AppleEvent 🍎</p>
+                  <p class="trends-text-posts acc-tag">1.13M posts</p>
+                </div>
+                <a href="#" class="trend-dots flex-center">
+                  <ion-icon
+                    name="ellipsis-horizontal-outline"
+                    class="acc-dots"
+                  ></ion-icon>
+                </a>
               </div>
-              <a href="#" class="trend-dots flex-center">
-                <ion-icon
-                  name="ellipsis-horizontal-outline"
-                  class="acc-dots"
-                ></ion-icon>
-              </a>
-            </div>
-            <div href="#" class="follow-trend">
-              <div class="trends-text">
-                <p class="trends-text-ranking acc-tag">
-                  7&nbsp;·&nbsp;Technology&nbsp;·&nbsp;Trending
-                </p>
-                <p class="trends-text-name">iPhone</p>
-                <p class="trends-text-posts acc-tag">1.32M posts</p>
+              <div href="#" class="follow-trend">
+                <div class="trends-text">
+                  <p class="trends-text-ranking acc-tag">
+                    2&nbsp;·&nbsp;Sports&nbsp;·&nbsp;Trending
+                  </p>
+                  <p class="trends-text-name">Kosovo</p>
+                  <p class="trends-text-posts acc-tag">16.4K posts</p>
+                </div>
+                <a href="#" class="trend-dots flex-center">
+                  <ion-icon
+                    name="ellipsis-horizontal-outline"
+                    class="acc-dots"
+                  ></ion-icon>
+                </a>
               </div>
-              <a href="#" class="trend-dots flex-center">
-                <ion-icon
-                  name="ellipsis-horizontal-outline"
-                  class="acc-dots"
-                ></ion-icon>
-              </a>
-            </div>
-            <div href="#" class="follow-trend">
-              <div class="trends-text">
-                <p class="trends-text-ranking acc-tag">
-                  8&nbsp;·&nbsp;Sports&nbsp;·&nbsp;Trending
-                </p>
-                <p class="trends-text-name">Simona</p>
-                <p class="trends-text-posts acc-tag">14.5K posts</p>
+              <div href="#" class="follow-trend">
+                <div class="trends-text">
+                  <p class="trends-text-ranking acc-tag">
+                    3&nbsp;·&nbsp;Trending
+                  </p>
+                  <p class="trends-text-name">#VMAs⛳</p>
+                  <p class="trends-text-posts acc-tag">1.13M posts</p>
+                </div>
+                <a href="#" class="trend-dots flex-center">
+                  <ion-icon
+                    name="ellipsis-horizontal-outline"
+                    class="acc-dots"
+                  ></ion-icon>
+                </a>
               </div>
-              <a href="#" class="trend-dots flex-center">
-                <ion-icon
-                  name="ellipsis-horizontal-outline"
-                  class="acc-dots"
-                ></ion-icon>
-              </a>
-            </div>
-            <div href="#" class="follow-trend">
-              <div class="trends-text">
-                <p class="trends-text-ranking acc-tag">
-                  9&nbsp;·&nbsp;Sports&nbsp;·&nbsp;Trending
-                </p>
-                <p class="trends-text-name">Serena</p>
-                <p class="trends-text-posts acc-tag">22.9K posts</p>
+              <div href="#" class="follow-trend">
+                <div class="trends-text">
+                  <p class="trends-text-ranking acc-tag">
+                    4&nbsp;·&nbsp;Gaming&nbsp;·&nbsp;Trending
+                  </p>
+                  <p class="trends-text-name">Unity</p>
+                  <p class="trends-text-posts acc-tag">235K posts</p>
+                </div>
+                <a href="#" class="trend-dots flex-center">
+                  <ion-icon
+                    name="ellipsis-horizontal-outline"
+                    class="acc-dots"
+                  ></ion-icon>
+                </a>
               </div>
-              <a href="#" class="trend-dots flex-center">
-                <ion-icon
-                  name="ellipsis-horizontal-outline"
-                  class="acc-dots"
-                ></ion-icon>
-              </a>
-            </div>
-            <div href="#" class="follow-trend">
-              <div class="trends-text">
-                <p class="trends-text-ranking acc-tag">
-                  10&nbsp;·&nbsp;Football&nbsp;·&nbsp;Trending
-                </p>
-                <p class="trends-text-name">UEFA</p>
-                <p class="trends-text-posts acc-tag">20.6K posts</p>
+              <div href="#" class="follow-trend">
+                <div class="trends-text">
+                  <p class="trends-text-ranking acc-tag">
+                    5&nbsp;·&nbsp;Trending
+                  </p>
+                  <p class="trends-text-name">#MonsterGrowth</p>
+                  <p class="trends-text-posts acc-tag">56K posts</p>
+                </div>
+                <a href="#" class="trend-dots flex-center">
+                  <ion-icon
+                    name="ellipsis-horizontal-outline"
+                    class="acc-dots"
+                  ></ion-icon>
+                </a>
               </div>
-              <a href="#" class="trend-dots flex-center">
-                <ion-icon
-                  name="ellipsis-horizontal-outline"
-                  class="acc-dots"
-                ></ion-icon>
-              </a>
-            </div>
+              <div href="#" class="follow-trend">
+                <div class="trends-text">
+                  <p class="trends-text-ranking acc-tag">
+                    6&nbsp;·&nbsp;K-pop&nbsp;·&nbsp;Trending
+                  </p>
+                  <p class="trends-text-name">#HappyBirthdayNamjoon</p>
+                  <p class="trends-text-posts acc-tag">38.2K posts</p>
+                </div>
+                <a href="#" class="trend-dots flex-center">
+                  <ion-icon
+                    name="ellipsis-horizontal-outline"
+                    class="acc-dots"
+                  ></ion-icon>
+                </a>
+              </div>
+              <div href="#" class="follow-trend">
+                <div class="trends-text">
+                  <p class="trends-text-ranking acc-tag">
+                    7&nbsp;·&nbsp;Technology&nbsp;·&nbsp;Trending
+                  </p>
+                  <p class="trends-text-name">iPhone</p>
+                  <p class="trends-text-posts acc-tag">1.32M posts</p>
+                </div>
+                <a href="#" class="trend-dots flex-center">
+                  <ion-icon
+                    name="ellipsis-horizontal-outline"
+                    class="acc-dots"
+                  ></ion-icon>
+                </a>
+              </div>
+              <div href="#" class="follow-trend">
+                <div class="trends-text">
+                  <p class="trends-text-ranking acc-tag">
+                    8&nbsp;·&nbsp;Sports&nbsp;·&nbsp;Trending
+                  </p>
+                  <p class="trends-text-name">Simona</p>
+                  <p class="trends-text-posts acc-tag">14.5K posts</p>
+                </div>
+                <a href="#" class="trend-dots flex-center">
+                  <ion-icon
+                    name="ellipsis-horizontal-outline"
+                    class="acc-dots"
+                  ></ion-icon>
+                </a>
+              </div>
+              <div href="#" class="follow-trend">
+                <div class="trends-text">
+                  <p class="trends-text-ranking acc-tag">
+                    9&nbsp;·&nbsp;Sports&nbsp;·&nbsp;Trending
+                  </p>
+                  <p class="trends-text-name">Serena</p>
+                  <p class="trends-text-posts acc-tag">22.9K posts</p>
+                </div>
+                <a href="#" class="trend-dots flex-center">
+                  <ion-icon
+                    name="ellipsis-horizontal-outline"
+                    class="acc-dots"
+                  ></ion-icon>
+                </a>
+              </div>
+              <div href="#" class="follow-trend">
+                <div class="trends-text">
+                  <p class="trends-text-ranking acc-tag">
+                    10&nbsp;·&nbsp;Football&nbsp;·&nbsp;Trending
+                  </p>
+                  <p class="trends-text-name">UEFA</p>
+                  <p class="trends-text-posts acc-tag">20.6K posts</p>
+                </div>
+                <a href="#" class="trend-dots flex-center">
+                  <ion-icon
+                    name="ellipsis-horizontal-outline"
+                    class="acc-dots"
+                  ></ion-icon>
+                </a>
+              </div>
 
-            <div href="#" class="follow-user show-more-box">
-              <p class="show-more-less-blue">Show more</p>
+              <div href="#" class="follow-user show-more-box">
+                <p class="show-more-less-blue">Show more</p>
+              </div>
             </div>
-          </div>
-          <div class="control-terms-conditions">
-            <nav class="footer-links">
-              <a href="#" class="footer-link">
-                <span class="footer-text">Terms of Service</span>
-              </a>
-              <a href="#" class="footer-link">
-                <span class="footer-text">Privacy Policy</span>
-              </a>
-              <a href="#" class="footer-link">
-                <span class="footer-text">Cookie Policy</span>
-              </a>
-              <a href="#" class="footer-link">
-                <span class="footer-text">Accessibility</span>
-              </a>
-              <a href="#" class="footer-link">
-                <span class="footer-text">Ads info</span>
-              </a>
-              <a href="#" class="footer-link">
-                <span class="footer-text">More ···</span>
-              </a>
-              <div class="footer-text">© 2023 X Corp.</div>
-            </nav>
+            <div class="control-terms-conditions">
+              <nav class="footer-links">
+                <a href="#" class="footer-link">
+                  <span class="footer-text">Terms of Service</span>
+                </a>
+                <a href="#" class="footer-link">
+                  <span class="footer-text">Privacy Policy</span>
+                </a>
+                <a href="#" class="footer-link">
+                  <span class="footer-text">Cookie Policy</span>
+                </a>
+                <a href="#" class="footer-link">
+                  <span class="footer-text">Accessibility</span>
+                </a>
+                <a href="#" class="footer-link">
+                  <span class="footer-text">Ads info</span>
+                </a>
+                <a href="#" class="footer-link">
+                  <span class="footer-text">More ···</span>
+                </a>
+                <div class="footer-text">© 2023 X Corp.</div>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
