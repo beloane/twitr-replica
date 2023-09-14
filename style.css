@@ -69,6 +69,7 @@ body {
   /* position: relative; */
 
   height: 100vh;
+  /* position: fixed; */
 
   display: flex;
   flex-direction: column;
@@ -78,7 +79,7 @@ body {
   color: rgb(231, 233, 234);
   padding-left: 1rem;
 
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 .header .header-acc {
