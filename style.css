@@ -222,10 +222,10 @@ body {
   font-size: 1.5rem;
 
   width: 59.8rem;
-  height: 10.4rem;
+  height: 10.8rem;
 
   position: fixed;
-  top: -0.5px;
+  /* top: -0.5px; */
 
   z-index: 1000;
 }
