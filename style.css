@@ -26,7 +26,7 @@ body {
   grid-template-columns: 27.5rem 94.8rem;
 } */
 .layout {
-  max-width: 122.5rem;
+  max-width: 124.7rem;
   margin: 0 auto;
   /* height: 100vh; */
 
@@ -145,6 +145,37 @@ body {
 .post-btn:hover,
 .post-btn:active {
   background-color: rgb(26, 140, 216);
+}
+
+/* MOBILE NAVIGATION HEADER */
+.post-btn-mobile:link,
+.post-btn-mobile:visited {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.8rem;
+  width: 5rem;
+  height: 5rem;
+  /* padding: 0.6rem; */
+  border-radius: 50%;
+  color: inherit;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 0.2s;
+  background-color: rgb(29, 155, 240);
+
+  display: none;
+}
+.post-btn-mobile:hover,
+.post-btn-mobile:active {
+  background-color: rgb(26, 140, 216);
+}
+.mobile-btn-logo {
+  color: white;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 /* .header-acc {
@@ -953,4 +984,88 @@ body {
   width: 25.5rem;
   margin: 0;
   border-radius: 0;
+}
+
+@media (max-width: 1287px) {
+  .layout {
+    max-width: 106.8rem;
+    grid-template-columns: 8.8rem 98rem;
+    margin: 0 auto;
+  }
+
+  .header {
+    overflow: hidden;
+  }
+
+  .list-el {
+    padding: 1.2rem 1.2rem;
+  }
+
+  .list-el span {
+    display: none;
+  }
+
+  .post-btn-cont {
+    margin: 1.6rem 0.5rem 0 0.5rem;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .post-btn:link,
+  .post-btn:visited {
+    display: none;
+  }
+
+  .post-btn-mobile:link,
+  .post-btn-mobile:visited {
+    display: flex;
+  }
+
+  .header-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-acc {
+    margin: 0 0.5rem;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-acc-link p,
+  .header-acc-link .acc-dots {
+    display: none;
+  }
+
+  .header-acc-link:link,
+  .header-acc-link:visited {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* padding: 0; */
+  }
+
+  .header-acc-link:hover,
+  .header-acc-link:active {
+    width: 6.4rem;
+    height: 6.4rem;
+  }
+}
+
+@media (max-width: 1106px) {
+  .layout {
+    max-width: 100.8rem;
+    grid-template-columns: 8.8rem 92rem;
+    margin: 0 auto;
+  }
 }
