@@ -625,7 +625,6 @@ body {
   align-self: center;
   height: 1rem;
   width: 1rem;
-  /* border: 1px solid white; */
 }
 
 .post-context-user-story img {
@@ -1166,5 +1165,55 @@ body {
 
   .logo-mobile-display {
     margin: 0 auto;
+  }
+
+  .for-you-form {
+    grid-template-columns: 64px 1fr;
+  }
+
+  .post-icon {
+    margin: 0 1.2rem 0 1.2rem;
+  }
+
+  .post-context-user-story {
+    margin-right: 1.6rem;
+  }
+  .post-context-user-story img {
+    margin-top: 1.2rem;
+    width: 100%;
+    border-radius: 1.6rem;
+  }
+
+  .aura {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .img-link {
+    height: 100%;
+    width: 100%;
+    margin: 1.2rem 0;
+    border-radius: 1.6rem;
+    border: 1px solid rgb(47, 51, 54);
+  }
+
+  .user-post-imgs {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    border-radius: 16px;
+    overflow: hidden;
+    margin: 1.2rem 0;
+
+    border: 1px solid rgb(47, 51, 54);
+  }
+  .user-post-imgs img {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
   }
 }
