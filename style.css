@@ -986,7 +986,14 @@ body {
   border-radius: 0;
 }
 
-@media (max-width: 1287px) {
+.head-nav-home-mobile {
+  display: none;
+}
+
+/**************************/
+/* BELOW 1287px (Large ) */
+/**************************/
+@media (max-width: 80.43em) {
   .layout {
     max-width: 106.8rem;
     grid-template-columns: 8.8rem 98rem;
@@ -1061,11 +1068,103 @@ body {
     height: 6.4rem;
   }
 }
-
-@media (max-width: 1106px) {
+/**************************/
+/* BELOW 1106px (Large tabets) */
+/**************************/
+@media (max-width: 69.125em) {
   .layout {
     max-width: 100.8rem;
     grid-template-columns: 8.8rem 92rem;
+    margin: 0 auto;
+  }
+
+  .controls-container {
+    margin-top: 0.5rem;
+    /* width: 28.8rem; */
+    width: auto;
+  }
+
+  .control-search,
+  .control,
+  .follow-user,
+  .follow-trend,
+  .control-terms-conditions,
+  .footer-links {
+    width: 28.8rem;
+  }
+
+  .control-subscribe {
+    height: 16.8rem;
+  }
+  .live-more-persons {
+    flex-direction: column;
+  }
+  .live-more-tabs {
+    margin: 1.2rem;
+  }
+}
+
+/**************************/
+/* BELOW 1024px (Tablets) */
+/**************************/
+
+@media (max-width: 64em) {
+  .layout {
+    max-width: 68.8rem;
+    grid-template-columns: 8.8rem 60rem;
+    margin: 0 auto;
+  }
+  .controls-container {
+    display: none;
+  }
+}
+
+/**************************/
+/* BELOW 705px (Phones) */
+/**************************/
+@media (max-width: 44em) {
+  .layout {
+    max-width: 38.4rem;
+    display: block;
+    /* grid-template-columns: 8.8rem 1fr; */
+    margin: 0 auto;
+  }
+  .header-container {
+    display: none;
+  }
+  .for-you {
+    width: 38.4rem;
+  }
+  .for-you-head-nav {
+    width: 38.4rem;
+    height: 10.8rem;
+  }
+  .head-nav-home {
+    display: none;
+  }
+
+  .head-nav-home-mobile {
+    display: flex;
+    align-items: center;
+    grid-column: 1/3;
+    height: 5.3rem;
+    padding: 1.2rem;
+    position: relative;
+  }
+
+  .mobile-header {
+    height: 3.5rem;
+    width: 3.5rem;
+    position: absolute;
+  }
+
+  .acc-logo-mobile {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+  }
+
+  .logo-mobile-display {
     margin: 0 auto;
   }
 }
