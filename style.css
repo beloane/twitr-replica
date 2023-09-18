@@ -258,7 +258,7 @@ body {
   position: fixed;
   /* top: -0.5px; */
 
-  z-index: 1000;
+  z-index: 800;
 }
 
 .head-nav-home {
@@ -988,6 +988,16 @@ body {
 .head-nav-home-mobile {
   display: none;
 }
+.header-container-mobile-nav {
+  position: fixed;
+
+  opacity: 0;
+  transition: all 0.3s ease-in;
+  pointer-events: none;
+  visibility: hidden;
+
+  transform: translateX(-100%);
+}
 
 /**************************/
 /* BELOW 1287px (Large ) */
@@ -1215,5 +1225,84 @@ body {
     width: 100%;
     margin: 0;
     border-radius: 0;
+  }
+
+  .for-you-form {
+    display: none;
+  }
+  .for-you-head-nav {
+    position: inherit;
+  }
+
+  /* /////////HEADER MOBILE///////////// */
+
+  .nav-open .header-container-mobile-nav {
+    pointer-events: auto;
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+    width: 100%;
+    height: 100vh;
+    z-index: 998;
+    background-color: rgba(91, 112, 131, 0.4);
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+
+    /* padding-top: 1.6rem; */
+  }
+
+  .header-mobile-nav {
+    background-color: black;
+    z-index: 999;
+    height: 100vh;
+    width: 24rem;
+
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 2rem;
+    color: rgb(231, 233, 234);
+    padding-left: 1rem;
+
+    overflow: auto;
+  }
+
+  .header-cont-user {
+    width: 100%;
+    height: 15.3rem;
+  }
+  .header-cont-user .header-acc .header-acc-link {
+    flex-direction: column;
+  }
+  .header-acc {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    justify-content: start;
+  }
+  .header-acc .acc-name {
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+  .header-acc .acc-tag {
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+  .user-following-mobile {
+    font-size: 1.4rem;
+    font-weight: 400;
+    display: flex;
+  }
+
+  .header-acc-link p {
+    display: block;
+  }
+  .header-list {
+    align-items: flex-start;
+  }
+  .list-el span {
+    display: block;
   }
 }
